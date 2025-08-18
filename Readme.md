@@ -1,40 +1,71 @@
 # Lab01 diseño y estructuración de aplicaciones distribuidas en internet
 
-One Paragraph of project description goes here
+En este laboratorio se desarrollo un servidor Http con el fin de poder realizar multiples solicitudes, para lograrlo 
+se utilizo javascript, css, java y librerias que nos permitan realizar el manejo de la red, mas no se utilizaron frameworks
+como Spark o Spring.
+
+Se realizo el servidor Http para poder realizar un lista de musica, es decir poder manejar tu propia lista de musica.
+
+## Screenshots of the project in action
+
+Inicio de la pagina.
+
+![Descripción de la imagen](src/img/img_1.png)
+
+Vamos a añadir una canción a la lista.
+
+![Descripción de la imagen](src/img/img_2.png)
+
+Vemos que se añadio correctamente la canción a la lista de canciones.
+
+![Descripción de la imagen](src/img/img_3.png)
+
+Vemos que la función de buscar canciones funciona de manera correcta.
+
+![Descripción de la imagen](src/img/img_4.png)
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Lo siguiente que se apreciara son los prerrequisitos para poder correr el proyecto de manera correcta.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Los prerrequisitos para poder instalar el proyecto son los siguientes:
 
 ```
-Give examples
+- Maven
+- Cualquier navegador Web
+- Java 17+
 ```
-
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+A continuación se va a ver el paso a paso para la instalación del proyecto.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+1. Clonar el repositorio
 
 ```
-until finished
+git clone https://github.com/Santiago-Cordoba/Lab01-AREP-Taller-Dise-o-y-estructuraci-n-aplicaciones-distribuidas-de-internet.git
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+2. Compilar el proyecto con maven (requisito previamente escrito)
+
+```
+mvn package
+```
+
+3. Desde un IDE ejecutar la clase HttpServer
+
+4. Una vez se esté ejecutando de manera correcta la clase HttpServer, en el navegador colocaremos:
+
+```
+http://localhost:35000
+```
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Se corren los test los diferentes funciones que se programaron para probar el correcto funcionamiento del proyecto.
+
+![Descripción de la imagen](src/img/img.png)
 
 ### Break down into end to end tests
 
@@ -44,45 +75,35 @@ Explain what these tests test and why
 Give an example
 ```
 
-### And coding style tests
+### Architecture
 
-Explain what these tests test and why
+Para Frontend se utilizo:
 
 ```
-Give an example
+- JavaScript
+- HTML
+- CSS
 ```
 
-## Deployment
+Para backend se utilizo:
 
-Add additional notes about how to deploy this on a live system
+```
+- Librerias para el manejo de la red (manejo de las peticiones HTTP).
+- Librerias para poder realizar las conexiones con los Sockets
+```
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+* [Java](https://www.java.com/es) - Lenguaje para el backend
+* [Maven](https://maven.apache.org/) - Manejo de Dependencias
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* **Santiago Córdoba Dueñas**  - [Santiago Córdoba](https://github.com/Santiago-Cordoba)
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Conocimiento de como montar un server Http sin la necesidad de usar frameworks como Spring
+* Entendimiento del funcionamiento de los Sockets
+
 
